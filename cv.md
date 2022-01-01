@@ -31,7 +31,7 @@ function multiply(a, b){
 I have been working as an economist at "Soedinitel" JSC since 2020
 
 ## Education
-I have a university degree in economics
+I have a university degree in economics at South Ural State University (National Research University)
 
 ## Languages
 - Russian (native)
