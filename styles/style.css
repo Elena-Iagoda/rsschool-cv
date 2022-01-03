@@ -1,0 +1,124 @@
+:root {
+    --main-container-width: 80%;
+    --main-container-height: auto;
+    --header-height: 200px;
+    --footer-height: auto;
+    --left-column-width: 30%;
+    --right-column-width: 70%;
+    --logo-height: 100px;
+
+}
+
+.main-container {
+    width: var(--main-container-width);
+    height: var(--main-container-height);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: gray;
+    height: var(--header-height);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    background-color: wheat;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+footer {
+    background-color: gray;
+    height: var(--footer-height);
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.container-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column {
+    width: var(--left-column-width);
+    background-color: gray;
+    color: white;
+    line-height: 20px;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.right-column {
+    width: var(--right-column-width);
+    background-color: whitesmoke;
+    line-height: 20px;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#photo {
+    height: var(--header-height);
+    width: auto;
+}
+
+#name {
+    flex-grow: 2;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+#contacts {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+#about {
+    background: whitesmoke;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    font-family: Arial;
+}
+
+p {
+    padding: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#about_me {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+body {
+    background: rgb(202, 165, 165);
+}
+
+.logo {
+    width: auto;
+    height: var(--logo-height);
+    margin: 10px;
+}
