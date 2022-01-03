@@ -1,12 +1,16 @@
 :root {
     --main-container-width: 80%;
     --main-container-height: auto;
-    --header-height: 200px;
+    --header-height: auto;
     --footer-height: auto;
     --left-column-width: 30%;
     --right-column-width: 70%;
     --logo-height: 100px;
+    --photo-height: 200px;
+}
 
+body {
+    background: rgb(202, 165, 165);
 }
 
 .main-container {
@@ -15,22 +19,25 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 20px 0 gray;
 }
 
 header {
     background-color: gray;
     height: var(--header-height);
-    width: 100%;
+    width: auto;
     text-align: center;
     align-items: center;
 }
 
 main {
     background-color: wheat;
-    height: 100%;
+    height: var(--main-container-height);
     width: 100%;
     flex-direction: column;
     line-height: 10px;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -39,9 +46,10 @@ footer {
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 20px;
+    font-size: medium;
     font-family: Arial;
     color: white;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -57,24 +65,23 @@ footer {
     width: var(--left-column-width);
     background-color: gray;
     color: white;
-    line-height: 20px;
     font-family: Arial;
-    font-size: 15px;
+    font-size: medium;
     line-height: 30px;
 }
 
 .right-column {
     width: var(--right-column-width);
     background-color: whitesmoke;
-    line-height: 20px;
     font-family: Arial;
     font-size: 20px;
     line-height: 30px;
 }
 
 #photo {
-    height: var(--header-height);
-    width: auto;
+    height: var(--photo-height);
+    width: var(--photo-height);
+    display: block;
 }
 
 #name {
@@ -111,10 +118,6 @@ p {
 #about_me {
     text-align: justify;
     text-indent: 2em;
-}
-
-body {
-    background: rgb(202, 165, 165);
 }
 
 .logo {
